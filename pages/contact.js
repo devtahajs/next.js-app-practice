@@ -20,10 +20,10 @@ const Contact = ({ data }) => {
         <div className="centerdiv">
             <Navbar />
             <h1>Welcome To Contact Page</h1>
-            {data.slice(0,5).map((curElm) => {
+            {data.slice(0,5).map((curElm,index) => {
                 return (
                     <Link href={`/posts/${curElm.id}`}>
-                    <div className="center" key={curElm.id}>
+                    <div className="center" key={index}>
                     <div className="postsdata">
                     <h3>{curElm.id}</h3>
                     
