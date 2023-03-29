@@ -36,7 +36,7 @@ const myData = ({ data }) => {
     <>
       <Navbar />
       <div className="center">
-      <div className="postsdata new-page">
+      <div className="postsdata new-page" key={curElem.id}>
         <h3>{id}</h3>
         <h2>{title}</h2>
         <p>{body}</p>
